@@ -28,20 +28,29 @@ module.exports = function (grunt) {
       }
       else {
         var combined_svg = '';
+        var names = [];
 
         el.src.forEach(function (file) {
           var ext = path.extname(file);
-          var name = path.basename(file, ext);
 
           if(ext === '.svg') {
-            var content = grunt.file.read(file);
-            var svg = content.match(/<svg[\s\S]*?>([\s\S]*?)<\/svg>/im);
-            if(svg) {
-              combined_svg += '<g id="svg-' + name + '">' + svg[1].replace(/\s{2,}/gm, ' ').trim() + '</g>';
-              grunt.log.writeln('✔ '.green + file + (' included').grey);
+            var name = path.basename(file, ext);
+
+            if(names.indexOf(name) < 0) {
+              names.push(name);
+
+              var content = grunt.file.read(file);
+              var svg = content.match(/<svg[\s\S]*?>([\s\S]*?)<\/svg>/im);
+              if(svg) {
+                combined_svg += '<g id="svg-' + name + '">' + svg[1].replace(/\s{2,}/gm, ' ').trim() + '</g>';
+                grunt.log.writeln('✔ '.green + file + (' included').grey);
+              }
+              else {
+                grunt.log.writeln('x '.red + file + (' is not a valid SVG file').grey);
+              }
             }
             else {
-              grunt.log.writeln('x '.red + file + (' is not a valid SVG file').grey);
+              grunt.log.writeln('x '.red + file + (' skipped due to duplicate filename').grey);
             }
           }
         });

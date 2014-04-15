@@ -1,4 +1,6 @@
-> Include and combine SVG files into your HTML to reference them as SVG templates
+Include and combine SVG files into your HTML to reference them as SVG templates
+
+Chris Coyier explains this mechanism nicely on his blog [CSS-Tricks](http://css-tricks.com/svg-tabs-using-svg-shape-template/)
 
 
 ## Getting Started
@@ -23,7 +25,7 @@ This task looks through your projects image directory for SVG files, extracts th
 </svg>
 ```
 
-Chris Coyier explains this mechanism nicely on his blog [CSS-Tricks](http://css-tricks.com/svg-tabs-using-svg-shape-template/)
+Include `<svg id="svgtemplater"></svg>` in your destination HTML file where you want the combined SVG groups to go. It'll be decorated with style `display: none;` automatically so you don't end up with a mess of SVGs somewhere on your site.
 
 
 ### Example Task
@@ -40,4 +42,4 @@ grunt.initConfig({
 
 ## License
 
-[Apache2](http://www.apache.org/licenses/LICENSE-2.0.html)
+[Apache2 License](http://www.apache.org/licenses/LICENSE-2.0.html)

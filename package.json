@@ -1,0 +1,39 @@
+{
+  "name": "grunt-svgtemplater",
+  "version": "0.1.1",
+  "description": "Include and combine SVG files into your HTML to reference them as SVG templates",
+  "keywords": [
+    "gruntplugin",
+    "svg",
+    "template",
+    "unify"
+  ],
+  "homepage": "https://github.com/serrynaimo/grunt-svgtemplater",
+  "bugs": {
+    "url": "https://github.com/serrynaimo/grunt-svgtemplater/issues"
+  },
+  "author": {
+    "name": "Thomas Gorissen",
+    "email": "mail@serrynaimo.com",
+    "url": "https://github.com/serrynaimo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/serrynaimo/grunt-svgtemplater.git"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": {
+    "type": "Apache2"
+  }
+}

@@ -31,7 +31,7 @@ Chris Coyier explains this mechanism nicely on his blog [CSS-Tricks](http://css-
 ```js
 grunt.initConfig({
     mytask: {
-      src: 'img/**/*.{svg}',
+      src: 'img/**/*.svg',
       dest: 'index.html'
     }
   }

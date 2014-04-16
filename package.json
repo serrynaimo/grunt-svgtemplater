@@ -34,6 +34,6 @@
     "node": ">=0.8.0"
   },
   "licenses": {
-    "type": "Apache2"
+    "type": "MIT"
   }
 }

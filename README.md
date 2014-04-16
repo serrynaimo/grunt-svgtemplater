@@ -1,5 +1,4 @@
 Include and combine SVG files into your HTML to reference them as SVG templates
-
 Chris Coyier explains this mechanism nicely on his blog [CSS-Tricks](http://css-tricks.com/svg-tabs-using-svg-shape-template/)
 
 
@@ -42,4 +41,4 @@ grunt.initConfig({
 
 ## License
 
-[Apache2 License](http://www.apache.org/licenses/LICENSE-2.0.html)
+[MIT](https://tldrlegal.com/license/mit-license)

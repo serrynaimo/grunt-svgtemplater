@@ -3,7 +3,7 @@ var path = require('path');
 var fs = require('fs');
 
 module.exports = function (grunt) {
-  grunt.registerMultiTask('svgtemplater', 'Include SVG files into an HTML file referencable as SVG templates', function () {
+  grunt.registerMultiTask('svgtemplater', 'Include and combine SVG files into your HTML to reference them as SVG templates', function () {
     var target = this.target;
     var svgtemplater = grunt.svgtemplater || {summary: {}};
 

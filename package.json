@@ -1,6 +1,6 @@
 {
   "name": "grunt-svgtemplater",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Include and combine SVG files into your HTML to reference them as SVG templates",
   "keywords": [
     "gruntplugin",

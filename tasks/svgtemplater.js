@@ -34,7 +34,7 @@ module.exports = function (grunt) {
           var ext = path.extname(file);
 
           if(ext === '.svg') {
-            var name = path.basename(file, ext);
+            var name = path.basename(file, ext).toLowerCase();
 
             if(names.indexOf(name) < 0) {
               names.push(name);
